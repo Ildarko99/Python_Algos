@@ -16,3 +16,20 @@
 Он просто позволяет протестировать условие в одной строке,
 заменяя многострочное if-else, делая код компактным.
 """
+
+
+def my_order():
+    x = int(input('Input year number: '))
+    if x % 4 == 0 and x % 100 != 100 or x % 400 == 0:
+        return 'Is leap'
+    else:
+        return 'Is not leap'
+
+
+def oneliner():
+    x = int(input('Input year number: '))
+    return 'Is leap' if x % 4 == 0 and x % 100 != 100 or x % 400 == 0 else 'Is not leap'
+
+
+print(oneliner())
+

@@ -13,3 +13,16 @@ k – угловой коэффициент (действительное чис
 X1_VAL = 2, Y1_VAL = 3, X2_VAL = 4, Y2_VAL = 5
 Уравнение прямой, проходящей через эти точки: y = 1.0x + 1.0
 """
+
+COORDINATES = {'X1': 0, 'Y1': 0, 'X2': 0, 'Y2': 0}
+for key in COORDINATES:
+    try:
+        COORDINATES[key] = int(input(f'Input {key}: '))
+    except ValueError:
+        print('Input digits only')
+        break
+
+C = COORDINATES
+print(C)
+EQUATION = f"{(C['Y1']-C['Y2'])}x + ({C['X2']-C['X1']})y + ({C['X1']*C['Y2'] - C['X2']*C['Y1']}) = 0"
+
