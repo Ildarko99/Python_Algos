@@ -14,3 +14,13 @@
 
 ЗДЕСЬ ДОЛЖНА БЫТЬ РЕАЛИЗАЦИЯ ЧЕРЕЗ РЕКУРСИЮ
 """
+
+
+def rollback(digit):
+    if digit == 0:
+        return ""
+    return rollback(digit // 10) + str(digit % 10)
+
+
+print(rollback(0))
+print(rollback(5161896))

@@ -15,3 +15,16 @@
 
 ЗДЕСЬ ДОЛЖНА БЫТЬ РЕАЛИЗАЦИЯ ЧЕРЕЗ РЕКУРСИЮ
 """
+
+param = int(input('Введите число: '))
+
+
+def evens(num, cnt_odds=0, cnt_evens=0):
+    if num == 0:
+        return f'Количество четных и нечетных цифр в числе равно: {cnt_odds}, {cnt_evens}.'
+    if num % 2 == 0:
+        return evens(num // 10, cnt_odds, cnt_evens + 1)
+    return evens(num // 10, cnt_odds + 1, cnt_evens)
+
+
+print(evens(param))

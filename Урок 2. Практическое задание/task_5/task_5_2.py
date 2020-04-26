@@ -17,3 +17,18 @@
 
 ЗДЕСЬ ДОЛЖНА БЫТЬ РЕАЛИЗАЦИЯ ЧЕРЕЗ РЕКУРСИЮ
 """
+
+def my_ascii(num, cnt=1):
+    if num == 128:
+        return ''
+    if cnt != 10:
+        print(f'{num} - {chr(num)}', end=' ')
+        my_ascii(num+1, cnt+1)
+    else:
+        print(f'{num} - {chr(num)}', end='\n')
+        cnt = 0
+        my_ascii(num+1, cnt + 1)
+
+my_ascii(32)
+
+

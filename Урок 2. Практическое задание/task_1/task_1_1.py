@@ -32,3 +32,48 @@
 
 ЗДЕСЬ ДОЛЖНА БЫТЬ РЕАЛИЗАЦИЯ ЧЕРЕЗ ЦИКЛ
 """
+
+
+def operands():
+    x = input('Введите операцию (+, -, *, / или 0 для выхода): ')
+    if x == '+' or x == '-' or x == '*' or x == '/':
+        return x
+    elif x == '0':
+        return 'exit'
+    else:
+        return 'Неверная операция. Повторите ввод'
+
+
+def get_digits():
+    first = int(input('Введите первое число: '))
+    second = int(input('Введите второе число: '))
+    return first, second
+
+
+def operations(operand, first, second):
+    if operand == 0:
+        return 'exit'
+    elif operand == '+':
+        return f'Результат {first} {operand} {second} = {first + second}'
+    elif operand == '-':
+        return f'Результат {first} {operand} {second} = {first - second}'
+    elif operand == '*':
+        return f'Результат {first} {operand} {second} = {first * second}'
+    elif operand == '/':
+        return f'Результат {first} {operand} {second} = {first / second}'
+    else:
+        return 'Неверная операция. Повторите ввод'
+
+
+while True:
+    operand = operands()
+    if operand == 'exit':
+        break
+    result = operations(operand, *get_digits())
+    if result == 'exit':
+        break
+    elif result == 'Неверная операция. Повторите ввод':
+        print(result)
+        continue
+    else:
+        print(result)

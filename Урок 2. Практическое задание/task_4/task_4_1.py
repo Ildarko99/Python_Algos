@@ -8,3 +8,18 @@
 
 ЗДЕСЬ ДОЛЖНА БЫТЬ РЕАЛИЗАЦИЯ ЧЕРЕЗ ЦИКЛ
 """
+
+
+# counter = int(input('Введите количество элементов: '))
+
+def my_func(cnt):
+    nxt = 1
+    res = 1
+    while cnt != 1:
+        nxt = nxt / -2
+        res += nxt
+        cnt -= 1
+    return res
+
+
+print(my_func(9))

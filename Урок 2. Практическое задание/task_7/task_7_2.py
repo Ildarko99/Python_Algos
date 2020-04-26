@@ -5,3 +5,15 @@
 
 ЗДЕСЬ ДОЛЖНА БЫТЬ РЕАЛИЗАЦИЯ ЧЕРЕЗ РЕКУРСИЮ
 """
+
+
+def checker(dig, left=True):
+    def left(x):
+        if x == 0:
+            return 0
+        return x + left(x - 1)
+
+    return left(dig) == (dig * (dig + 1) / 2)
+
+
+print(checker(3))
