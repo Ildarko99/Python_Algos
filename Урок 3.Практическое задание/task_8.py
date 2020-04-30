@@ -36,3 +36,20 @@
 [3, 3, 3, 3, 12]
 [3, 3, 3, 3, 12]
 """
+
+a = \
+    [[3, 3, 3, 3, 12],
+     [3, 3, 3, 3, 12],
+     [3, 3, 3, 3, 12],
+     [3, 3, 3, 3, 12],
+     [3, 3, 3, 3, 12]]
+
+MATRIX = []
+for el in range(5):
+    row = []
+    for column in range(4):
+        row.append(int(input(f'Введите число {column + 1}:\n')))
+    row.append(sum(row))
+    MATRIX.append(row)
+for one_row in MATRIX:
+    print(one_row, end='\n')
