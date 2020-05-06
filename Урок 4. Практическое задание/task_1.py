@@ -12,3 +12,62 @@
 ВНИМАНИЕ: ЗАДАНИЯ, В КОТОРЫХ БУДУТ ГОЛЫЕ ЦИФРЫ ЗАМЕРОВ (БЕЗ АНАЛИТИКИ)
 БУДУТ ПРИНИМАТЬСЯ С ОЦЕНКОЙ УДОВЛЕТВОРИТЕЛЬНО
 """
+import cProfile
+import time
+
+'''
+В процессе изучения наткнулся на интересный и не очень освещенный в интернете момент, что
+чистый код алгоритма, обернутый в функцию, исполняется значительно быстрее, так как происходит 
+вызов локальных переменных, а не глобальных (это единственное пояснение, которое нашел)
+https://docs.python.org/3.8/whatsnew/3.8.html#demos-and-tools
+во всех версиях Питона работа с локальными переменными оптимизированна значительно лучше, чем с глобальными,
+что следует из таблицы документации. Таким образом, обернув код в функцию и вызвав еёс нужным аргументом
+можно получить значительный прирост скорости обработки. Ниже доказательство на примере решета Эратосфена.
+'''
+start_time = time.time()  # замеряем начало работы программы
+n = 15_000_000  # число, до которого хотим найти простые числа
+numbers = list(range(2, n + 1))
+for number in numbers:
+    if number != 0:
+        for candidate in range(2 * number, n + 1, number):
+            numbers[candidate - 2] = 0
+end = time.time()  # замеряем конец работы программы
+test1 = end - start_time
+print(f'Время работы чистым кодом {test1}')  # выводим разницу во времени
+print('=' * 100)
+
+# замерим время работы и данные через cProfile.
+pure_code = (cProfile.run('''
+n = 15_000_000  # число, до которого хотим найти простые числа
+numbers = list(range(2, n + 1))
+for number in numbers:
+    if number != 0:
+        for candidate in range(2 * number, n + 1, number):
+            numbers[candidate - 2] = 0
+'''))
+print(pure_code)
+
+
+# теперь запишем этот код в функцию и ниже вызовем её
+def eratosphene(n):
+    # n = 10_000_000  # число, до которого хотим найти простые числа
+    numbers = list(range(2, n + 1))
+    for number in numbers:
+        if number != 0:
+            for candidate in range(2 * number, n + 1, number):
+                numbers[candidate - 2] = 0
+    return list(lambda x: x !=0 for x in numbers)
+
+
+# замерим время вызова функции с аналогичным параметром
+time_of_second = time.time()
+eratosphene(15_000_000)
+end_of_second = time.time()
+test2 = (end_of_second - time_of_second)
+print(f'Время работы функцией {test2}')
+
+# вызываем функцию с аналогичным параметром и замеряем ее через cProfile
+f_test = cProfile.run('eratosphene(15_000_000)')
+print(f_test)
+print('=' * 100)
+print(f'Разница в эффективности составляет {round(((1 - test1 / test2) * 100), 2)}%')
