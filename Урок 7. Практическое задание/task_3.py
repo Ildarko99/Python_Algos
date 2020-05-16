@@ -6,3 +6,14 @@
 массива. Но если это слишком сложно, то используйте метод сортировки,
 который не рассматривался на уроках
 """
+
+B = [3, 4, 7, 2, 1, 8, 0]
+s = sorted(B)
+print(s)
+def mediana(x):
+    A = list(x)
+    for i in range(len(x) // 2):
+        A.remove(min(A))
+    return min(A)
+
+print(mediana(B))
