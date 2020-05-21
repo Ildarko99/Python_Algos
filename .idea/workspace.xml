@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d5dc493-9997-4739-a1f2-baf6061c0024" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Урок 6. Практическое задание/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Урок 6. Практическое задание/task_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Урок 7. Практическое задание/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Урок 7. Практическое задание/task_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Урок 7. Практическое задание/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Урок 7. Практическое задание/task_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Урок 7. Практическое задание/task_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Урок 7. Практическое задание/task_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Урок 8. Практическое задание/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Урок 8. Практическое задание/task_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Урок 8. Практическое задание/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Урок 8. Практическое задание/task_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +62,8 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.task_3">
-    <configuration name="task_1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.task_2 (1)">
+    <configuration name="task_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Algos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Урок 6. Практическое задание" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Урок 8. Практическое задание" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Урок 6. Практическое задание/task_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Урок 8. Практическое задание/task_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="task_1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="task_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_Algos" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Урок 7. Практическое задание" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Урок 8. Практическое задание" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Урок 7. Практическое задание/task_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Урок 8. Практическое задание/task_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.task_2 (1)" />
+        <item itemvalue="Python.task_1" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.task_3" />
         <item itemvalue="Python.task_2" />
-        <item itemvalue="Python.task_1 (2)" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.task_1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -323,38 +323,38 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="577" y="303" width="424" height="484" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1587559995138" />
-    <state width="1577" height="260" key="GridCell.Tab.0.bottom" timestamp="1589660300444">
+    <state width="1577" height="246" key="GridCell.Tab.0.bottom" timestamp="1590093822463">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="260" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1589660300444" />
-    <state width="1577" height="260" key="GridCell.Tab.0.center" timestamp="1589660300444">
+    <state width="1577" height="246" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1590093822463" />
+    <state width="1577" height="246" key="GridCell.Tab.0.center" timestamp="1590093822461">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="260" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1589660300444" />
-    <state width="1577" height="260" key="GridCell.Tab.0.left" timestamp="1589660300443">
+    <state width="1577" height="246" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1590093822461" />
+    <state width="1577" height="246" key="GridCell.Tab.0.left" timestamp="1590093822460">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="260" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1589660300443" />
-    <state width="1577" height="260" key="GridCell.Tab.0.right" timestamp="1589660300444">
+    <state width="1577" height="246" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1590093822460" />
+    <state width="1577" height="246" key="GridCell.Tab.0.right" timestamp="1590093822462">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="260" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1589660300444" />
-    <state width="1577" height="272" key="GridCell.Tab.1.bottom" timestamp="1589660203074">
+    <state width="1577" height="246" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1590093822462" />
+    <state width="1577" height="280" key="GridCell.Tab.1.bottom" timestamp="1590093589606">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="272" key="GridCell.Tab.1.bottom/0.27.1600.873@0.27.1600.873" timestamp="1589660203074" />
-    <state width="1577" height="272" key="GridCell.Tab.1.center" timestamp="1589660203071">
+    <state width="1577" height="280" key="GridCell.Tab.1.bottom/0.27.1600.873@0.27.1600.873" timestamp="1590093589606" />
+    <state width="1577" height="280" key="GridCell.Tab.1.center" timestamp="1590093589605">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="272" key="GridCell.Tab.1.center/0.27.1600.873@0.27.1600.873" timestamp="1589660203071" />
-    <state width="1577" height="272" key="GridCell.Tab.1.left" timestamp="1589660203071">
+    <state width="1577" height="280" key="GridCell.Tab.1.center/0.27.1600.873@0.27.1600.873" timestamp="1590093589605" />
+    <state width="1577" height="280" key="GridCell.Tab.1.left" timestamp="1590093589605">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="272" key="GridCell.Tab.1.left/0.27.1600.873@0.27.1600.873" timestamp="1589660203071" />
-    <state width="1577" height="272" key="GridCell.Tab.1.right" timestamp="1589660203073">
+    <state width="1577" height="280" key="GridCell.Tab.1.left/0.27.1600.873@0.27.1600.873" timestamp="1590093589605" />
+    <state width="1577" height="280" key="GridCell.Tab.1.right" timestamp="1590093589606">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1577" height="272" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1589660203073" />
+    <state width="1577" height="280" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1590093589606" />
     <state x="383" y="199" width="824" height="526" key="IDE.errors.dialog" timestamp="1587905017506">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -412,6 +412,16 @@
           <url>file://$PROJECT_DIR$/Урок 7. Практическое задание/task_3.py</url>
           <line>14</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Урок 8. Практическое задание/task_2.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Урок 8. Практическое задание/task_2.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
